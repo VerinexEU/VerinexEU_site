@@ -2,6 +2,9 @@
 const nextConfig = {
   target: 'serverless',
   reactStrictMode: true,
-}
+  env: {
+    NODE_OPTIONS: '--openssl-legacy-provider',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
